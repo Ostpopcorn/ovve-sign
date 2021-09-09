@@ -1,0 +1,6 @@
+[submodule ".\\lib\\SymbolOST\\"]
+	path = .\\lib\\SymbolOST\\
+	url = git@github.com:Ostpopcorn/SymbolsOST.git
+[submodule ".\\lib\\Connector_Esp\\"]
+	path = .\\lib\\Connector_Esp\\
+	url = git@github.com:Ostpopcorn/Connector_Esp.git
