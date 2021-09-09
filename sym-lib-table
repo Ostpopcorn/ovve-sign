@@ -1,0 +1,5 @@
+(sym_lib_table
+  (lib (name Connector_Esp)(type Legacy)(uri ${KIPRJMOD}/lib/Connector_Esp/Connector_Esp.lib)(options "")(descr ""))
+  (lib (name ovvekit-rescue)(type Legacy)(uri ${KIPRJMOD}/ovvekit-rescue.lib)(options "")(descr ""))
+  (lib (name Special_Parts)(type Legacy)(uri ${KIPRJMOD}/lib/Special_Parts/Special_Parts.lib)(options "")(descr ""))
+)

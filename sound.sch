@@ -1,0 +1,382 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 3 4
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L SamacSys_Parts:MAX4466EXK+T IC?
+U 1 1 60997FE9
+P 5250 2400
+AR Path="/60997FE9" Ref="IC?"  Part="1" 
+AR Path="/6099554C/60997FE9" Ref="IC1"  Part="1" 
+F 0 "IC1" H 5750 2665 50  0000 C CNN
+F 1 "MAX4466EXK+T" H 5750 2574 50  0000 C CNN
+F 2 "SamacSys_Parts:SOT65P210X110-5N" H 6100 2500 50  0001 L CNN
+F 3 "https://datasheets.maximintegrated.com/en/ds/MAX4465-MAX4469.pdf" H 6100 2400 50  0001 L CNN
+F 4 "Microphone Preamplifiers uPower Microphone Preamplifier" H 6100 2300 50  0001 L CNN "Description"
+F 5 "1.1" H 6100 2200 50  0001 L CNN "Height"
+F 6 "700-MAX4466EXKT" H 6100 2100 50  0001 L CNN "Mouser Part Number"
+F 7 "https://www.mouser.co.uk/ProductDetail/Maxim-Integrated/MAX4466EXK%2bT?qs=1eQvB6Dk1viIfH6l6v5sWg%3D%3D" H 6100 2000 50  0001 L CNN "Mouser Price/Stock"
+F 8 "Maxim Integrated" H 6100 1900 50  0001 L CNN "Manufacturer_Name"
+F 9 "MAX4466EXK+T" H 6100 1800 50  0001 L CNN "Manufacturer_Part_Number"
+	1    5250 2400
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GNDA #PWR?
+U 1 1 60997FEF
+P 5050 2600
+AR Path="/60997FEF" Ref="#PWR?"  Part="1" 
+AR Path="/6099554C/60997FEF" Ref="#PWR0106"  Part="1" 
+F 0 "#PWR0106" H 5050 2350 50  0001 C CNN
+F 1 "GNDA" H 5055 2427 50  0000 C CNN
+F 2 "" H 5050 2600 50  0001 C CNN
+F 3 "" H 5050 2600 50  0001 C CNN
+	1    5050 2600
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3.3VA #PWR?
+U 1 1 60997FF5
+P 6300 2250
+AR Path="/60997FF5" Ref="#PWR?"  Part="1" 
+AR Path="/6099554C/60997FF5" Ref="#PWR0107"  Part="1" 
+F 0 "#PWR0107" H 6300 2100 50  0001 C CNN
+F 1 "+3.3VA" H 6315 2423 50  0000 C CNN
+F 2 "" H 6300 2250 50  0001 C CNN
+F 3 "" H 6300 2250 50  0001 C CNN
+	1    6300 2250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 60997FFB
+P 3600 1700
+AR Path="/60997FFB" Ref="R?"  Part="1" 
+AR Path="/6099554C/60997FFB" Ref="R7"  Part="1" 
+F 0 "R7" H 3670 1746 50  0000 L CNN
+F 1 "2k" H 3670 1655 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" V 3530 1700 50  0001 C CNN
+F 3 "~" H 3600 1700 50  0001 C CNN
+	1    3600 1700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 60998001
+P 3600 2100
+AR Path="/60998001" Ref="R?"  Part="1" 
+AR Path="/6099554C/60998001" Ref="R8"  Part="1" 
+F 0 "R8" H 3670 2146 50  0000 L CNN
+F 1 "2k" H 3670 2055 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" V 3530 2100 50  0001 C CNN
+F 3 "~" H 3600 2100 50  0001 C CNN
+	1    3600 2100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 60998007
+P 3000 2000
+AR Path="/60998007" Ref="C?"  Part="1" 
+AR Path="/6099554C/60998007" Ref="C27"  Part="1" 
+F 0 "C27" H 3115 2046 50  0000 L CNN
+F 1 "0.1uF" H 3115 1955 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 3038 1850 50  0001 C CNN
+F 3 "~" H 3000 2000 50  0001 C CNN
+	1    3000 2000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3000 1850 3000 1800
+Wire Wire Line
+	3000 1800 3350 1800
+Wire Wire Line
+	3350 1800 3350 1900
+Wire Wire Line
+	3350 1900 3600 1900
+Wire Wire Line
+	3600 1900 3600 1850
+Wire Wire Line
+	3600 1950 3600 1900
+Connection ~ 3600 1900
+$Comp
+L power:+3.3VA #PWR?
+U 1 1 6099C5B6
+P 3600 1450
+AR Path="/6099C5B6" Ref="#PWR?"  Part="1" 
+AR Path="/6099554C/6099C5B6" Ref="#PWR0108"  Part="1" 
+F 0 "#PWR0108" H 3600 1300 50  0001 C CNN
+F 1 "+3.3VA" H 3615 1623 50  0000 C CNN
+F 2 "" H 3600 1450 50  0001 C CNN
+F 3 "" H 3600 1450 50  0001 C CNN
+	1    3600 1450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 6099DE44
+P 4400 2400
+AR Path="/6099DE44" Ref="C?"  Part="1" 
+AR Path="/6099554C/6099DE44" Ref="C28"  Part="1" 
+F 0 "C28" H 4515 2446 50  0000 L CNN
+F 1 "0.01u" H 4515 2355 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 4438 2250 50  0001 C CNN
+F 3 "~" H 4400 2400 50  0001 C CNN
+	1    4400 2400
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GNDA #PWR?
+U 1 1 6099EA35
+P 3000 2250
+AR Path="/6099EA35" Ref="#PWR?"  Part="1" 
+AR Path="/6099554C/6099EA35" Ref="#PWR0109"  Part="1" 
+F 0 "#PWR0109" H 3000 2000 50  0001 C CNN
+F 1 "GNDA" H 3005 2077 50  0000 C CNN
+F 2 "" H 3000 2250 50  0001 C CNN
+F 3 "" H 3000 2250 50  0001 C CNN
+	1    3000 2250
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GNDA #PWR?
+U 1 1 6099FF10
+P 3600 3050
+AR Path="/6099FF10" Ref="#PWR?"  Part="1" 
+AR Path="/6099554C/6099FF10" Ref="#PWR0110"  Part="1" 
+F 0 "#PWR0110" H 3600 2800 50  0001 C CNN
+F 1 "GNDA" H 3605 2877 50  0000 C CNN
+F 2 "" H 3600 3050 50  0001 C CNN
+F 3 "" H 3600 3050 50  0001 C CNN
+	1    3600 3050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4550 2400 4800 2400
+Wire Wire Line
+	3000 2250 3000 2150
+Wire Wire Line
+	3600 1550 3600 1450
+Wire Wire Line
+	3600 2250 3600 2400
+Wire Wire Line
+	3600 2400 4250 2400
+$Comp
+L Device:R R?
+U 1 1 609A12F8
+P 5200 3550
+AR Path="/609A12F8" Ref="R?"  Part="1" 
+AR Path="/6099554C/609A12F8" Ref="R11"  Part="1" 
+F 0 "R11" H 5270 3596 50  0000 L CNN
+F 1 "1k" H 5270 3505 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" V 5130 3550 50  0001 C CNN
+F 3 "~" H 5200 3550 50  0001 C CNN
+	1    5200 3550
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 609A1B0E
+P 5200 3950
+AR Path="/609A1B0E" Ref="C?"  Part="1" 
+AR Path="/6099554C/609A1B0E" Ref="C29"  Part="1" 
+F 0 "C29" H 5315 3996 50  0000 L CNN
+F 1 "10u" H 5315 3905 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 5238 3800 50  0001 C CNN
+F 3 "~" H 5200 3950 50  0001 C CNN
+	1    5200 3950
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 609A2D9A
+P 4800 2200
+AR Path="/609A2D9A" Ref="R?"  Part="1" 
+AR Path="/6099554C/609A2D9A" Ref="R9"  Part="1" 
+F 0 "R9" H 4870 2246 50  0000 L CNN
+F 1 "1M" H 4870 2155 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" V 4730 2200 50  0001 C CNN
+F 3 "~" H 4800 2200 50  0001 C CNN
+	1    4800 2200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 609A2DA0
+P 4800 2600
+AR Path="/609A2DA0" Ref="R?"  Part="1" 
+AR Path="/6099554C/609A2DA0" Ref="R10"  Part="1" 
+F 0 "R10" H 4870 2646 50  0000 L CNN
+F 1 "1M" H 4870 2555 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" V 4730 2600 50  0001 C CNN
+F 3 "~" H 4800 2600 50  0001 C CNN
+	1    4800 2600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4800 2450 4800 2400
+Connection ~ 4800 2400
+Wire Wire Line
+	4800 2400 5250 2400
+Wire Wire Line
+	4800 2350 4800 2400
+$Comp
+L power:+3.3VA #PWR?
+U 1 1 609A5464
+P 4800 1950
+AR Path="/609A5464" Ref="#PWR?"  Part="1" 
+AR Path="/6099554C/609A5464" Ref="#PWR0111"  Part="1" 
+F 0 "#PWR0111" H 4800 1800 50  0001 C CNN
+F 1 "+3.3VA" H 4815 2123 50  0000 C CNN
+F 2 "" H 4800 1950 50  0001 C CNN
+F 3 "" H 4800 1950 50  0001 C CNN
+	1    4800 1950
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GNDA #PWR?
+U 1 1 609A59D7
+P 4800 2850
+AR Path="/609A59D7" Ref="#PWR?"  Part="1" 
+AR Path="/6099554C/609A59D7" Ref="#PWR0112"  Part="1" 
+F 0 "#PWR0112" H 4800 2600 50  0001 C CNN
+F 1 "GNDA" H 4805 2677 50  0000 C CNN
+F 2 "" H 4800 2850 50  0001 C CNN
+F 3 "" H 4800 2850 50  0001 C CNN
+	1    4800 2850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4800 2850 4800 2750
+Wire Wire Line
+	5250 2500 5050 2500
+Wire Wire Line
+	5050 2500 5050 2600
+Wire Wire Line
+	5200 2600 5250 2600
+Wire Wire Line
+	5200 3700 5200 3800
+$Comp
+L power:GNDA #PWR?
+U 1 1 609A7D7C
+P 5200 4200
+AR Path="/609A7D7C" Ref="#PWR?"  Part="1" 
+AR Path="/6099554C/609A7D7C" Ref="#PWR0113"  Part="1" 
+F 0 "#PWR0113" H 5200 3950 50  0001 C CNN
+F 1 "GNDA" H 5205 4027 50  0000 C CNN
+F 2 "" H 5200 4200 50  0001 C CNN
+F 3 "" H 5200 4200 50  0001 C CNN
+	1    5200 4200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5200 4200 5200 4100
+$Comp
+L Device:C C?
+U 1 1 609A94A1
+P 6050 3250
+AR Path="/609A94A1" Ref="C?"  Part="1" 
+AR Path="/6099554C/609A94A1" Ref="C30"  Part="1" 
+F 0 "C30" H 6165 3296 50  0000 L CNN
+F 1 "520p" H 6165 3205 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 6088 3100 50  0001 C CNN
+F 3 "~" H 6050 3250 50  0001 C CNN
+	1    6050 3250
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	6200 3250 6450 3250
+Wire Wire Line
+	6450 2400 6250 2400
+Wire Wire Line
+	6300 2250 6300 2500
+Wire Wire Line
+	6300 2500 6250 2500
+Text GLabel 6450 2400 2    50   Input ~ 0
+AUDIO_OUT
+$Comp
+L Device:Microphone MK1
+U 1 1 609AEADE
+P 3600 2700
+F 0 "MK1" H 3730 2746 50  0000 L CNN
+F 1 "Microphone" H 3730 2655 50  0000 L CNN
+F 2 "SamacSys_Parts:CMEJ062742P" V 3600 2800 50  0001 C CNN
+F 3 "~" V 3600 2800 50  0001 C CNN
+	1    3600 2700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3600 2500 3600 2400
+Connection ~ 3600 2400
+Wire Wire Line
+	3600 2900 3600 3050
+Wire Wire Line
+	4800 2050 4800 1950
+Wire Wire Line
+	5200 2600 5200 3000
+Wire Wire Line
+	5200 3250 5900 3250
+Connection ~ 5200 3250
+Wire Wire Line
+	5200 3250 5200 3400
+$Comp
+L Device:R R?
+U 1 1 613DC685
+P 5500 3000
+AR Path="/613DC685" Ref="R?"  Part="1" 
+AR Path="/6099554C/613DC685" Ref="R12"  Part="1" 
+F 0 "R12" H 5570 3046 50  0000 L CNN
+F 1 "100k" H 5570 2955 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" V 5430 3000 50  0001 C CNN
+F 3 "~" H 5500 3000 50  0001 C CNN
+	1    5500 3000
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R_POT RV1
+U 1 1 613DD068
+P 6100 3000
+F 0 "RV1" V 5985 3000 50  0000 C CNN
+F 1 "100k" V 5894 3000 50  0000 C CNN
+F 2 "Potentiometer_SMD:Potentiometer_Bourns_3314S_Horizontal" H 6100 3000 50  0001 C CNN
+F 3 "~" H 6100 3000 50  0001 C CNN
+	1    6100 3000
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	5200 3000 5350 3000
+Connection ~ 5200 3000
+Wire Wire Line
+	5200 3000 5200 3250
+Wire Wire Line
+	5650 3000 5950 3000
+Wire Wire Line
+	6450 2400 6450 3000
+Wire Wire Line
+	6100 2850 6350 2850
+Wire Wire Line
+	6350 2850 6350 3000
+Wire Wire Line
+	6350 3000 6250 3000
+Wire Wire Line
+	6350 3000 6450 3000
+Connection ~ 6350 3000
+Connection ~ 6450 3000
+Wire Wire Line
+	6450 3000 6450 3250
+Text Label 5200 2900 0    50   ~ 0
+AUDIO_AMP-
+Text Label 5100 2400 0    50   ~ 0
+AUDIO_AMP+
+$EndSCHEMATC

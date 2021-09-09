@@ -1,0 +1,5 @@
+(fp_lib_table
+  (lib (name SymbolsOST)(type KiCad)(uri ${KIPRJMOD}/lib/SymbolOST/SymbolOST.pretty)(options "")(descr ""))
+  (lib (name Connector_Esp)(type KiCad)(uri ${KIPRJMOD}/lib/Connector_Esp/Connector_Esp.pretty)(options "")(descr ""))
+  (lib (name Special_Parts)(type KiCad)(uri ${KIPRJMOD}/lib/Special_Parts/Special_Parts.pretty)(options "")(descr ""))
+)

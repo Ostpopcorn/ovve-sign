@@ -1,0 +1,111 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 4 4
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Device:Polyfuse F201
+U 1 1 60998165
+P 2600 1200
+F 0 "F201" V 2825 1200 50  0000 C CNN
+F 1 "Polyfuse" V 2734 1200 50  0000 C CNN
+F 2 "Fuse:Fuse_1210_3225Metric_Pad1.42x2.65mm_HandSolder" H 2650 1000 50  0001 L CNN
+F 3 "~" H 2600 1200 50  0001 C CNN
+	1    2600 1200
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:Q_PMOS_GSD Q201
+U 1 1 60998F82
+P 3250 1300
+F 0 "Q201" V 3592 1300 50  0000 C CNN
+F 1 "Q_PMOS_GSD" V 3501 1300 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:TSOT-23" H 3450 1400 50  0001 C CNN
+F 3 "~" H 3250 1300 50  0001 C CNN
+	1    3250 1300
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:D_Zener D201
+U 1 1 6099C285
+P 3750 1400
+F 0 "D201" V 3704 1480 50  0000 L CNN
+F 1 "D_Zener" V 3795 1480 50  0000 L CNN
+F 2 "Diode_SMD:D_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 3750 1400 50  0001 C CNN
+F 3 "~" H 3750 1400 50  0001 C CNN
+	1    3750 1400
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	3250 1500 3250 1600
+Wire Wire Line
+	3750 1550 3750 1600
+Wire Wire Line
+	3750 1600 3250 1600
+Connection ~ 3250 1600
+Wire Wire Line
+	3750 1250 3750 1200
+Wire Wire Line
+	3750 1200 3450 1200
+Wire Wire Line
+	2750 1200 3050 1200
+$Comp
+L Special_Parts:Power_Planes J201
+U 1 1 609A11BB
+P 1850 1250
+F 0 "J201" H 1908 1525 50  0000 C CNN
+F 1 "Power_Planes" H 1908 1434 50  0000 C CNN
+F 2 "Special_Parts:Power_planes_3x6mm" H 1850 1400 50  0001 C CNN
+F 3 "" H 1850 1400 50  0001 C CNN
+	1    1850 1250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2050 1200 2450 1200
+Wire Wire Line
+	2050 1300 2250 1300
+Wire Wire Line
+	2250 1300 2250 2000
+Wire Wire Line
+	2250 2000 2750 2000
+$Comp
+L power:GND #PWR0114
+U 1 1 609A2357
+P 2750 2000
+F 0 "#PWR0114" H 2750 1750 50  0001 C CNN
+F 1 "GND" H 2755 1827 50  0000 C CNN
+F 2 "" H 2750 2000 50  0001 C CNN
+F 3 "" H 2750 2000 50  0001 C CNN
+	1    2750 2000
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:VCC #PWR0115
+U 1 1 609A2B73
+P 3750 950
+F 0 "#PWR0115" H 3750 800 50  0001 C CNN
+F 1 "VCC" H 3765 1123 50  0000 C CNN
+F 2 "" H 3750 950 50  0001 C CNN
+F 3 "" H 3750 950 50  0001 C CNN
+	1    3750 950 
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3750 950  3750 1200
+Connection ~ 3750 1200
+Wire Wire Line
+	2750 2000 3250 2000
+Wire Wire Line
+	3250 1600 3250 2000
+Connection ~ 2750 2000
+$EndSCHEMATC
