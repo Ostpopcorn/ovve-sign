@@ -14,14 +14,14 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L SamacSys_Parts:MAX4466EXK+T IC?
+L Special_Parts:MAX4466EXK+T IC?
 U 1 1 60997FE9
 P 5250 2400
 AR Path="/60997FE9" Ref="IC?"  Part="1" 
 AR Path="/6099554C/60997FE9" Ref="IC1"  Part="1" 
 F 0 "IC1" H 5750 2665 50  0000 C CNN
 F 1 "MAX4466EXK+T" H 5750 2574 50  0000 C CNN
-F 2 "SamacSys_Parts:SOT65P210X110-5N" H 6100 2500 50  0001 L CNN
+F 2 "Special_Parts:SOT65P210X110-5N" H 6100 2500 50  0001 L CNN
 F 3 "https://datasheets.maximintegrated.com/en/ds/MAX4465-MAX4469.pdf" H 6100 2400 50  0001 L CNN
 F 4 "Microphone Preamplifiers uPower Microphone Preamplifier" H 6100 2300 50  0001 L CNN "Description"
 F 5 "1.1" H 6100 2200 50  0001 L CNN "Height"

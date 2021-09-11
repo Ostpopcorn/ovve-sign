@@ -5,4 +5,9 @@ D Microphones microphone, 6 mm, electret condenser, omnidirectional, Pin, 2 Vdc,
 F https://componentsearchengine.com/Datasheets/1/CMEJ-0627-42-P.pdf
 $ENDCMP
 #
+$CMP MAX4466EXK+T
+D Microphone Preamplifiers uPower Microphone Preamplifier
+F https://datasheets.maximintegrated.com/en/ds/MAX4465-MAX4469.pdf
+$ENDCMP
+#
 #End Doc Library
