@@ -13,17 +13,6 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
-$Comp
-L RF_Module:ESP32-WROOM-32 U1
-U 1 1 6063995A
-P 4050 3200
-F 0 "U1" H 4050 4781 50  0000 C CNN
-F 1 "ESP32-WROOM-32" H 4050 4690 50  0000 C CNN
-F 2 "RF_Module:ESP32-WROOM-32" H 4050 1700 50  0001 C CNN
-F 3 "https://www.espressif.com/sites/default/files/documentation/esp32-wroom-32_datasheet_en.pdf" H 3750 3250 50  0001 C CNN
-	1    4050 3200
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	4900 3700 4650 3700
 $Comp
@@ -643,7 +632,6 @@ Wire Wire Line
 	4650 4100 4900 4100
 NoConn ~ 3450 3700
 NoConn ~ 4650 4300
-NoConn ~ 4650 4200
 NoConn ~ 4650 4000
 NoConn ~ 4650 3600
 NoConn ~ 4650 3500
@@ -696,4 +684,19 @@ Wire Wire Line
 	6000 5550 6000 5800
 Wire Wire Line
 	6000 5150 6000 5050
+$Comp
+L RF_Module:ESP32-WROOM-32 U1
+U 1 1 6063995A
+P 4050 3200
+F 0 "U1" H 4050 4781 50  0000 C CNN
+F 1 "ESP32-WROOM-32" H 4050 4690 50  0000 C CNN
+F 2 "RF_Module:ESP32-WROOM-32" H 4050 1700 50  0001 C CNN
+F 3 "https://www.espressif.com/sites/default/files/documentation/esp32-wroom-32_datasheet_en.pdf" H 3750 3250 50  0001 C CNN
+	1    4050 3200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4900 4200 4650 4200
+Text GLabel 4900 4200 2    50   Input ~ 0
+Battery_monitor
 $EndSCHEMATC
