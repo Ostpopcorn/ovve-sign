@@ -298,12 +298,10 @@ $EndComp
 Wire Wire Line
 	6200 3250 6450 3250
 Wire Wire Line
-	6450 2400 6250 2400
-Wire Wire Line
 	6300 2250 6300 2500
 Wire Wire Line
 	6300 2500 6250 2500
-Text GLabel 6450 2400 2    50   Input ~ 0
+Text GLabel 7400 2350 2    50   Input ~ 0
 AUDIO_OUT
 $Comp
 L Device:Microphone MK1
@@ -362,8 +360,6 @@ Wire Wire Line
 Wire Wire Line
 	5650 3000 5950 3000
 Wire Wire Line
-	6450 2400 6450 3000
-Wire Wire Line
 	6100 2850 6350 2850
 Wire Wire Line
 	6350 2850 6350 3000
@@ -372,11 +368,89 @@ Wire Wire Line
 Wire Wire Line
 	6350 3000 6450 3000
 Connection ~ 6350 3000
-Connection ~ 6450 3000
 Wire Wire Line
 	6450 3000 6450 3250
 Text Label 5200 2900 0    50   ~ 0
 AUDIO_AMP-
 Text Label 5100 2400 0    50   ~ 0
 AUDIO_AMP+
+$Comp
+L Device:R R?
+U 1 1 61522A62
+P 6850 2400
+AR Path="/61522A62" Ref="R?"  Part="1" 
+AR Path="/6099554C/61522A62" Ref="R13"  Part="1" 
+F 0 "R13" H 6920 2446 50  0000 L CNN
+F 1 "100" H 6920 2355 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" V 6780 2400 50  0001 C CNN
+F 3 "~" H 6850 2400 50  0001 C CNN
+	1    6850 2400
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 615259FD
+P 7150 2700
+AR Path="/615259FD" Ref="C?"  Part="1" 
+AR Path="/6099554C/615259FD" Ref="C31"  Part="1" 
+F 0 "C31" H 7265 2746 50  0000 L CNN
+F 1 "0.1uF" H 7265 2655 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 7188 2550 50  0001 C CNN
+F 3 "~" H 7150 2700 50  0001 C CNN
+	1    7150 2700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7000 2400 7150 2400
+Wire Wire Line
+	7150 2400 7150 2550
+Wire Wire Line
+	7150 2400 7400 2400
+Wire Wire Line
+	7400 2400 7400 2350
+Connection ~ 7150 2400
+Wire Wire Line
+	6250 2400 6450 2400
+Wire Wire Line
+	6450 2400 6450 3000
+Connection ~ 6450 3000
+$Comp
+L power:GNDA #PWR?
+U 1 1 6152A041
+P 7150 2950
+AR Path="/6152A041" Ref="#PWR?"  Part="1" 
+AR Path="/6099554C/6152A041" Ref="#PWR0123"  Part="1" 
+F 0 "#PWR0123" H 7150 2700 50  0001 C CNN
+F 1 "GNDA" H 7155 2777 50  0000 C CNN
+F 2 "" H 7150 2950 50  0001 C CNN
+F 3 "" H 7150 2950 50  0001 C CNN
+	1    7150 2950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7150 2950 7150 2850
+Wire Wire Line
+	6450 2400 6700 2400
+Connection ~ 6450 2400
+$Comp
+L Jumper:Jumper_2_Bridged JP?
+U 1 1 6153B171
+P 6850 2050
+AR Path="/6153B171" Ref="JP?"  Part="1" 
+AR Path="/6099554C/6153B171" Ref="JP10"  Part="1" 
+F 0 "JP10" V 6900 2250 50  0000 R CNN
+F 1 "Jumper_2_Bridged" V 6800 2800 50  0000 R CNN
+F 2 "Jumper:SolderJumper-2_P1.3mm_Open_TrianglePad1.0x1.5mm" H 6850 2050 50  0001 C CNN
+F 3 "~" H 6850 2050 50  0001 C CNN
+	1    6850 2050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6450 2400 6450 2050
+Wire Wire Line
+	6450 2050 6650 2050
+Wire Wire Line
+	7050 2050 7150 2050
+Wire Wire Line
+	7150 2050 7150 2400
 $EndSCHEMATC
