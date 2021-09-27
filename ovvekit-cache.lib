@@ -328,6 +328,7 @@ ENDDEF
 #
 # Special_Parts_MAX4466EXK+T
 #
+>>>>>>> Stashed changes
 DEF Special_Parts_MAX4466EXK+T IC 0 30 Y Y 1 F N
 F0 "IC" 850 300 50 H V L CNN
 F1 "Special_Parts_MAX4466EXK+T" 850 200 50 H V L CNN
