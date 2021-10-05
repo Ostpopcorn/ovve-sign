@@ -5,6 +5,11 @@ D Microphones microphone, 6 mm, electret condenser, omnidirectional, Pin, 2 Vdc,
 F https://componentsearchengine.com/Datasheets/1/CMEJ-0627-42-P.pdf
 $ENDCMP
 #
+$CMP LSM9DS1TR
+D iNEMO Inertial 3D Accel/Gyro/Magn. LGA24 STMicroelectronics LSM9DS1TR 3-Axis Accelerometer, Gyroscope & Magnetometer, 0  400 kHz, 1.9  3.6 V
+F http://www.st.com/content/ccc/resource/technical/document/datasheet/1e/3f/2a/d6/25/eb/48/46/DM00103319.pdf/files/DM00103319.pdf/jcr:content/translations/en.DM00103319.pdf
+$ENDCMP
+#
 $CMP MAX4466EXK+T
 D Microphone Preamplifiers uPower Microphone Preamplifier
 F https://datasheets.maximintegrated.com/en/ds/MAX4465-MAX4469.pdf
