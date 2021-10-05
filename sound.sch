@@ -311,7 +311,7 @@ U 1 1 609AEADE
 P 1900 2350
 F 0 "MK1" H 2030 2396 50  0000 L CNN
 F 1 "Microphone" H 2030 2305 50  0000 L CNN
-F 2 "SamacSys_Parts:CMEJ062742P" V 1900 2450 50  0001 C CNN
+F 2 "Special_Parts:CMEJ062742P" V 1900 2450 50  0001 C CNN
 F 3 "~" V 1900 2450 50  0001 C CNN
 	1    1900 2350
 	1    0    0    -1  
@@ -375,7 +375,7 @@ Connection ~ 4650 2650
 Connection ~ 4750 2650
 Wire Wire Line
 	4750 2650 4750 2900
-Text Label 3500 2550 0    50   ~ 0
+Text Label 3500 2800 0    50   ~ 0
 AUDIO_AMP-
 Text Label 3400 2050 0    50   ~ 0
 AUDIO_AMP+
@@ -492,8 +492,8 @@ L power:GNDA #PWR?
 U 1 1 615D7A24
 P 6500 2750
 AR Path="/615D7A24" Ref="#PWR?"  Part="1" 
-AR Path="/6099554C/615D7A24" Ref="#PWR?"  Part="1" 
-F 0 "#PWR?" H 6500 2500 50  0001 C CNN
+AR Path="/6099554C/615D7A24" Ref="#PWR0123"  Part="1" 
+F 0 "#PWR0123" H 6500 2500 50  0001 C CNN
 F 1 "GNDA" H 6505 2577 50  0000 C CNN
 F 2 "" H 6500 2750 50  0001 C CNN
 F 3 "" H 6500 2750 50  0001 C CNN
@@ -505,4 +505,20 @@ Wire Wire Line
 Connection ~ 6500 2650
 Wire Wire Line
 	6500 2650 6700 2650
+$Comp
+L Special_Parts:LSM9DS1TR AC1
+U 1 1 615C84F5
+P 5300 3800
+F 0 "AC1" H 6100 4065 50  0000 C CNN
+F 1 "LSM9DS1TR" H 6100 3974 50  0000 C CNN
+F 2 "Special_Parts:LGA-24L_3X3.5X1MM_" H 6750 3900 50  0001 L CNN
+F 3 "http://www.st.com/content/ccc/resource/technical/document/datasheet/1e/3f/2a/d6/25/eb/48/46/DM00103319.pdf/files/DM00103319.pdf/jcr:content/translations/en.DM00103319.pdf" H 6750 3800 50  0001 L CNN
+F 4 "iNEMO Inertial 3D Accel/Gyro/Magn. LGA24 STMicroelectronics LSM9DS1TR 3-Axis Accelerometer, Gyroscope & Magnetometer, 0  400 kHz, 1.9  3.6 V" H 6750 3700 50  0001 L CNN "Description"
+F 5 "511-LSM9DS1TR" H 6750 3500 50  0001 L CNN "Mouser Part Number"
+F 6 "https://www.mouser.co.uk/ProductDetail/STMicroelectronics/LSM9DS1TR?qs=4b8myOmUP%252BsiwRDrJOMxKQ%3D%3D" H 6750 3400 50  0001 L CNN "Mouser Price/Stock"
+F 7 "STMicroelectronics" H 6750 3300 50  0001 L CNN "Manufacturer_Name"
+F 8 "LSM9DS1TR" H 6750 3200 50  0001 L CNN "Manufacturer_Part_Number"
+	1    5300 3800
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
