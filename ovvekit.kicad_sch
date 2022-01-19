@@ -1127,11 +1127,11 @@
       (effects (font (size 1.27 1.27)) hide)
     )
   )
-  (global_label "EN" (shape input) (at 224.79 144.78 180) (fields_autoplaced)
+  (global_label "RESET" (shape input) (at 224.79 144.78 180) (fields_autoplaced)
     (effects (font (size 1.27 1.27)) (justify right))
     (uuid e32ee344-1030-4498-9cac-bfbf7540faf4)
-    (property "Intersheet References" "${INTERSHEET_REFS}" (id 0) (at 0 0 0)
-      (effects (font (size 1.27 1.27)) hide)
+    (property "Intersheet References" "${INTERSHEET_REFS}" (id 0) (at 216.7206 144.7006 0)
+      (effects (font (size 1.27 1.27)) (justify right) hide)
     )
   )
   (global_label "TDO" (shape input) (at 191.77 143.51 0) (fields_autoplaced)
@@ -2203,21 +2203,6 @@
     (path "/00000000-0000-0000-0000-00006099554c/00000000-0000-0000-0000-0000615d7a24"
       (reference "#PWR0123") (unit 1) (value "GNDA") (footprint "")
     )
-    (path "/00000000-0000-0000-0000-00006099554c/00000000-0000-0000-0000-000061b361f4"
-      (reference "#PWR0124") (unit 1) (value "GND") (footprint "")
-    )
-    (path "/00000000-0000-0000-0000-00006099554c/00000000-0000-0000-0000-000061b386c1"
-      (reference "#PWR0125") (unit 1) (value "+3.3V") (footprint "")
-    )
-    (path "/00000000-0000-0000-0000-00006099554c/00000000-0000-0000-0000-000061b3eef1"
-      (reference "#PWR0126") (unit 1) (value "GND") (footprint "")
-    )
-    (path "/00000000-0000-0000-0000-00006099554c/00000000-0000-0000-0000-000061b400c0"
-      (reference "#PWR0127") (unit 1) (value "GND") (footprint "")
-    )
-    (path "/00000000-0000-0000-0000-00006099554c/00000000-0000-0000-0000-000061b458d5"
-      (reference "#PWR0128") (unit 1) (value "GND") (footprint "")
-    )
     (path "/00000000-0000-0000-0000-0000609974e9/00000000-0000-0000-0000-0000615dbfa4"
       (reference "#PWR0201") (unit 1) (value "+3.3V") (footprint "")
     )
@@ -2599,6 +2584,9 @@
     (path "/00000000-0000-0000-0000-0000609974e9/00000000-0000-0000-0000-0000615f098e"
       (reference "R210") (unit 1) (value "10") (footprint "Resistor_SMD:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder")
     )
+    (path "/00000000-0000-0000-0000-0000609974e9/e5f46ad9-2ec1-46e2-9d32-c83596a7eaeb"
+      (reference "R211") (unit 1) (value "0") (footprint "Resistor_SMD:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder")
+    )
     (path "/00000000-0000-0000-0000-0000609974e9/00000000-0000-0000-0000-000061afc736"
       (reference "R220") (unit 1) (value "100K") (footprint "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder")
     )
@@ -2628,9 +2616,6 @@
     )
     (path "/00000000-0000-0000-0000-0000609974e9/00000000-0000-0000-0000-000061aeb8b2"
       (reference "U201") (unit 1) (value "AP2112K-3.3") (footprint "Package_TO_SOT_SMD:SOT-23-5")
-    )
-    (path "/00000000-0000-0000-0000-00006099554c/00000000-0000-0000-0000-000061b29b38"
-      (reference "U202") (unit 1) (value "LSM6DS3") (footprint "Package_LGA:LGA-14_3x2.5mm_P0.5mm_LayoutBorder3x4y")
     )
     (path "/00000000-0000-0000-0000-0000609974e9/6f094073-8ef6-4c6e-b324-ff1cd5f09bba"
       (reference "U203") (unit 1) (value "AMS1117-3.3") (footprint "Package_TO_SOT_SMD:SOT-223-3_TabPin2")
