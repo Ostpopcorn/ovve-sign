@@ -2,7 +2,7 @@
 # Format documentation: http://kicad-pcb.org/help/file-formats/
 
 *-backups/
-
+*.gbr
 # Temporary files
 *.000
 *.bak

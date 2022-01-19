@@ -49,7 +49,13 @@
         }
       },
       "diff_pair_dimensions": [],
-      "drc_exclusions": [],
+      "drc_exclusions": [
+        "clearance|-12611538|6367308|7e78365b-e992-4691-ac88-b57c9142948c|bfd6b0b4-4170-4569-88e6-7ad866cf0e2d",
+        "clearance|-1867308|26388462|a5cd9f01-bcc6-4310-aa3f-1e76f1ddb134|db5af982-772e-4d1b-85a9-7918ce199a17",
+        "clearance|24388462|32867308|900813d6-8904-41ec-93bc-a7a4d5f4bf62|15e32513-b5c6-4ebe-a6bb-282966d6228c",
+        "clearance|38375000|35430000|4b2990fe-ba4e-43b0-a4ca-eae9ee5b451a|5b491acd-9d2b-4a19-b9ac-1f5e09cf03b1",
+        "clearance|39325000|35430000|5b491acd-9d2b-4a19-b9ac-1f5e09cf03b1|deab85f2-681d-4115-9bb6-6c54045fbfe4"
+      ],
       "meta": {
         "filename": "board_design_settings.json",
         "version": 2
