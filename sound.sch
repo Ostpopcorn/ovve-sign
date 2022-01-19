@@ -506,19 +506,119 @@ Connection ~ 6500 2650
 Wire Wire Line
 	6500 2650 6700 2650
 $Comp
-L Special_Parts:LSM9DS1TR AC1
-U 1 1 615C84F5
-P 5300 3800
-F 0 "AC1" H 6100 4065 50  0000 C CNN
-F 1 "LSM9DS1TR" H 6100 3974 50  0000 C CNN
-F 2 "Special_Parts:LGA-24L_3X3.5X1MM_" H 6750 3900 50  0001 L CNN
-F 3 "http://www.st.com/content/ccc/resource/technical/document/datasheet/1e/3f/2a/d6/25/eb/48/46/DM00103319.pdf/files/DM00103319.pdf/jcr:content/translations/en.DM00103319.pdf" H 6750 3800 50  0001 L CNN
-F 4 "iNEMO Inertial 3D Accel/Gyro/Magn. LGA24 STMicroelectronics LSM9DS1TR 3-Axis Accelerometer, Gyroscope & Magnetometer, 0  400 kHz, 1.9  3.6 V" H 6750 3700 50  0001 L CNN "Description"
-F 5 "511-LSM9DS1TR" H 6750 3500 50  0001 L CNN "Mouser Part Number"
-F 6 "https://www.mouser.co.uk/ProductDetail/STMicroelectronics/LSM9DS1TR?qs=4b8myOmUP%252BsiwRDrJOMxKQ%3D%3D" H 6750 3400 50  0001 L CNN "Mouser Price/Stock"
-F 7 "STMicroelectronics" H 6750 3300 50  0001 L CNN "Manufacturer_Name"
-F 8 "LSM9DS1TR" H 6750 3200 50  0001 L CNN "Manufacturer_Part_Number"
-	1    5300 3800
+L power:GND #PWR?
+U 1 1 61B361F4
+P 6650 5400
+AR Path="/609974E9/61B361F4" Ref="#PWR?"  Part="1" 
+AR Path="/6099554C/61B361F4" Ref="#PWR0124"  Part="1" 
+F 0 "#PWR0124" H 6650 5150 50  0001 C CNN
+F 1 "GND" H 6655 5227 50  0000 C CNN
+F 2 "" H 6650 5400 50  0001 C CNN
+F 3 "" H 6650 5400 50  0001 C CNN
+	1    6650 5400
 	1    0    0    -1  
 $EndComp
+$Comp
+L power:+3.3V #PWR?
+U 1 1 61B386C1
+P 6600 3550
+AR Path="/609974E9/61B386C1" Ref="#PWR?"  Part="1" 
+AR Path="/6099554C/61B386C1" Ref="#PWR0125"  Part="1" 
+F 0 "#PWR0125" H 6600 3400 50  0001 C CNN
+F 1 "+3.3V" H 6615 3723 50  0000 C CNN
+F 2 "" H 6600 3550 50  0001 C CNN
+F 3 "" H 6600 3550 50  0001 C CNN
+	1    6600 3550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6600 3550 6600 3850
+Wire Wire Line
+	6700 3950 6700 3850
+Wire Wire Line
+	6700 3850 6600 3850
+Connection ~ 6600 3850
+Wire Wire Line
+	6600 3850 6600 3950
+Wire Wire Line
+	6650 5400 6650 5250
+Wire Wire Line
+	6650 5250 6600 5250
+Wire Wire Line
+	6600 5250 6600 5150
+Wire Wire Line
+	6700 5150 6700 5250
+Wire Wire Line
+	6700 5250 6650 5250
+Connection ~ 6650 5250
+$Comp
+L power:GND #PWR?
+U 1 1 61B3EEF1
+P 5900 4450
+AR Path="/609974E9/61B3EEF1" Ref="#PWR?"  Part="1" 
+AR Path="/6099554C/61B3EEF1" Ref="#PWR0126"  Part="1" 
+F 0 "#PWR0126" H 5900 4200 50  0001 C CNN
+F 1 "GND" H 5905 4277 50  0000 C CNN
+F 2 "" H 5900 4450 50  0001 C CNN
+F 3 "" H 5900 4450 50  0001 C CNN
+	1    5900 4450
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5900 4450 6000 4450
+$Comp
+L power:GND #PWR?
+U 1 1 61B400C0
+P 5850 4350
+AR Path="/609974E9/61B400C0" Ref="#PWR?"  Part="1" 
+AR Path="/6099554C/61B400C0" Ref="#PWR0127"  Part="1" 
+F 0 "#PWR0127" H 5850 4100 50  0001 C CNN
+F 1 "GND" H 5855 4177 50  0000 C CNN
+F 2 "" H 5850 4350 50  0001 C CNN
+F 3 "" H 5850 4350 50  0001 C CNN
+	1    5850 4350
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5850 4350 6000 4350
+$Comp
+L Sensor_Motion:LSM6DS3 U202
+U 1 1 61B29B38
+P 6600 4550
+F 0 "U202" H 7244 4596 50  0000 L CNN
+F 1 "LSM6DS3" H 7244 4505 50  0000 L CNN
+F 2 "Package_LGA:LGA-14_3x2.5mm_P0.5mm_LayoutBorder3x4y" H 6200 3850 50  0001 L CNN
+F 3 "www.st.com/resource/en/datasheet/lsm6ds3.pdf" H 6700 3900 50  0001 C CNN
+	1    6600 4550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5250 4250 6000 4250
+$Comp
+L power:GND #PWR?
+U 1 1 61B458D5
+P 5900 4850
+AR Path="/609974E9/61B458D5" Ref="#PWR?"  Part="1" 
+AR Path="/6099554C/61B458D5" Ref="#PWR0128"  Part="1" 
+F 0 "#PWR0128" H 5900 4600 50  0001 C CNN
+F 1 "GND" H 5905 4677 50  0000 C CNN
+F 2 "" H 5900 4850 50  0001 C CNN
+F 3 "" H 5900 4850 50  0001 C CNN
+	1    5900 4850
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5900 4850 6000 4850
+Wire Wire Line
+	5250 4650 6000 4650
+Wire Wire Line
+	5250 4750 6000 4750
+NoConn ~ 7200 4350
+NoConn ~ 7200 4250
+Text GLabel 5250 4250 0    50   Input ~ 0
+SDO
+Text GLabel 5250 4750 0    50   Input ~ 0
+SDC
+Text GLabel 5250 4650 0    50   Input ~ 0
+SDI
 $EndSCHEMATC
