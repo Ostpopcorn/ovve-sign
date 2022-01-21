@@ -3,6 +3,7 @@
 
 *-backups/
 *.gbr
+gbr/
 # Temporary files
 *.000
 *.bak
