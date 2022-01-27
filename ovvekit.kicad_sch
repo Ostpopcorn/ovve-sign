@@ -1253,7 +1253,7 @@
     (uuid 00000000-0000-0000-0000-00006095333e)
     (property "Reference" "SW1" (id 0) (at 191.77 22.3225 0))
     (property "Value" "SW_Push" (id 1) (at 191.77 25.0976 0))
-    (property "Footprint" "Button_Switch_SMD:SW_Push_1P1T_NO_6x6mm_H9.5mm" (id 2) (at 191.77 24.13 0)
+    (property "Footprint" "Button_Switch_THT:SW_PUSH_6mm_H5mm" (id 2) (at 191.77 24.13 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (id 3) (at 191.77 24.13 0)
@@ -1268,7 +1268,7 @@
     (uuid 00000000-0000-0000-0000-000060953687)
     (property "Reference" "SW2" (id 0) (at 191.77 42.6425 0))
     (property "Value" "SW_Push" (id 1) (at 191.77 45.4176 0))
-    (property "Footprint" "Button_Switch_SMD:SW_Push_1P1T_NO_6x6mm_H9.5mm" (id 2) (at 191.77 44.45 0)
+    (property "Footprint" "Button_Switch_THT:SW_PUSH_6mm_H5mm" (id 2) (at 191.77 44.45 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (id 3) (at 191.77 44.45 0)
@@ -1647,7 +1647,7 @@
     (uuid 00000000-0000-0000-0000-0000609d2703)
     (property "Reference" "SW3" (id 0) (at 246.38 25.781 0))
     (property "Value" "SW_Push" (id 1) (at 246.38 28.0924 0))
-    (property "Footprint" "Button_Switch_SMD:SW_Push_1P1T_NO_6x6mm_H9.5mm" (id 2) (at 246.38 27.94 0)
+    (property "Footprint" "Button_Switch_THT:SW_PUSH_6mm_H5mm" (id 2) (at 246.38 27.94 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (id 3) (at 246.38 27.94 0)
@@ -1938,7 +1938,7 @@
     (uuid 00000000-0000-0000-0000-000061b18aaf)
     (property "Reference" "SW4" (id 0) (at 247.65 58.801 0))
     (property "Value" "SW_Push" (id 1) (at 247.65 61.1124 0))
-    (property "Footprint" "Button_Switch_SMD:SW_Push_1P1T_NO_6x6mm_H9.5mm" (id 2) (at 247.65 60.96 0)
+    (property "Footprint" "Button_Switch_SMD:SW_SPST_TL3342" (id 2) (at 247.65 60.96 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (id 3) (at 247.65 60.96 0)
@@ -2387,7 +2387,7 @@
       (reference "C311") (unit 1) (value "100n") (footprint "Capacitor_SMD:C_0603_1608Metric")
     )
     (path "/00000000-0000-0000-0000-0000609974e9/00000000-0000-0000-0000-00006099c285"
-      (reference "D201") (unit 1) (value "D_Zener") (footprint "Diode_SMD:D_0805_2012Metric_Pad1.15x1.40mm_HandSolder")
+      (reference "D201") (unit 1) (value "BZX284-C5V1") (footprint "Diode_SMD:D_SOD-110")
     )
     (path "/00000000-0000-0000-0000-000060a9ac30/00000000-0000-0000-0000-000060b67313"
       (reference "DN1") (unit 1) (value "WS2812B") (footprint "LED_SMD:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm")
@@ -2516,7 +2516,7 @@
       (reference "MK1") (unit 1) (value "Microphone") (footprint "Special_Parts:CMEJ062742P")
     )
     (path "/00000000-0000-0000-0000-0000609974e9/00000000-0000-0000-0000-000060998f82"
-      (reference "Q201") (unit 1) (value "Q_PMOS_GSD") (footprint "Package_TO_SOT_SMD:TSOT-23")
+      (reference "Q201") (unit 1) (value "SI4435DY_GSD") (footprint "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm")
     )
     (path "/00000000-0000-0000-0000-000060968a02"
       (reference "R1") (unit 1) (value "220R") (footprint "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder")
@@ -2581,6 +2581,9 @@
     (path "/00000000-0000-0000-0000-0000609974e9/00000000-0000-0000-0000-00006141df1c"
       (reference "R202") (unit 1) (value "1M") (footprint "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder")
     )
+    (path "/00000000-0000-0000-0000-0000609974e9/a03d0f3d-c3fe-4e03-bb94-bcc91c33fae5"
+      (reference "R204") (unit 1) (value "100R") (footprint "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder")
+    )
     (path "/00000000-0000-0000-0000-0000609974e9/00000000-0000-0000-0000-0000615f098e"
       (reference "R210") (unit 1) (value "10") (footprint "Resistor_SMD:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder")
     )
@@ -2600,16 +2603,16 @@
       (reference "RV1") (unit 1) (value "100k") (footprint "Potentiometer_SMD:Potentiometer_Bourns_3314S_Horizontal")
     )
     (path "/00000000-0000-0000-0000-00006095333e"
-      (reference "SW1") (unit 1) (value "SW_Push") (footprint "Button_Switch_SMD:SW_Push_1P1T_NO_6x6mm_H9.5mm")
+      (reference "SW1") (unit 1) (value "SW_Push") (footprint "Button_Switch_THT:SW_PUSH_6mm_H5mm")
     )
     (path "/00000000-0000-0000-0000-000060953687"
-      (reference "SW2") (unit 1) (value "SW_Push") (footprint "Button_Switch_SMD:SW_Push_1P1T_NO_6x6mm_H9.5mm")
+      (reference "SW2") (unit 1) (value "SW_Push") (footprint "Button_Switch_THT:SW_PUSH_6mm_H5mm")
     )
     (path "/00000000-0000-0000-0000-0000609d2703"
-      (reference "SW3") (unit 1) (value "SW_Push") (footprint "Button_Switch_SMD:SW_Push_1P1T_NO_6x6mm_H9.5mm")
+      (reference "SW3") (unit 1) (value "SW_Push") (footprint "Button_Switch_THT:SW_PUSH_6mm_H5mm")
     )
     (path "/00000000-0000-0000-0000-000061b18aaf"
-      (reference "SW4") (unit 1) (value "SW_Push") (footprint "Button_Switch_SMD:SW_Push_1P1T_NO_6x6mm_H9.5mm")
+      (reference "SW4") (unit 1) (value "SW_Push") (footprint "Button_Switch_SMD:SW_SPST_TL3342")
     )
     (path "/00000000-0000-0000-0000-00006063995a"
       (reference "U1") (unit 1) (value "ESP32-WROOM-32") (footprint "RF_Module:ESP32-WROOM-32")
