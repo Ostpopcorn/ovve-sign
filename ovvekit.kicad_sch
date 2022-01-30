@@ -2485,9 +2485,6 @@
     (path "/00000000-0000-0000-0000-000060a2e651"
       (reference "H6") (unit 1) (value "ZiptieHole") (footprint "MountingHole:MountingHole_2.7mm_M2.5_ISO7380")
     )
-    (path "/00000000-0000-0000-0000-00006099554c/00000000-0000-0000-0000-000060997fe9"
-      (reference "IC1") (unit 1) (value "MAX4466EXK+T") (footprint "Special_Parts:SOT65P210X110-5N")
-    )
     (path "/00000000-0000-0000-0000-00006096e772"
       (reference "J1") (unit 1) (value "ESP_PROG_JTAG") (footprint "Connector_Esp:SMT_ESP_PROG_JTAG_1.27")
     )
@@ -2613,6 +2610,9 @@
     )
     (path "/00000000-0000-0000-0000-00006063995a"
       (reference "U1") (unit 1) (value "ESP32-WROOM-32") (footprint "RF_Module:ESP32-WROOM-32")
+    )
+    (path "/00000000-0000-0000-0000-00006099554c/631167f5-11a2-46cd-80e9-ce323cd1eec7"
+      (reference "U2") (unit 1) (value "MCP6001x-LT") (footprint "Package_TO_SOT_SMD:SOT-353_SC-70-5")
     )
     (path "/00000000-0000-0000-0000-0000609974e9/00000000-0000-0000-0000-000061aeb8b2"
       (reference "U201") (unit 1) (value "AP2112K-3.3") (footprint "Package_TO_SOT_SMD:SOT-23-5")
