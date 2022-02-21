@@ -410,7 +410,6 @@
     )
   )
 
-
   (junction (at 118.11 67.31) (diameter 0) (color 0 0 0 0)
     (uuid 2026567f-be64-41dd-8011-b0897ba0ff2e)
   )
@@ -1186,7 +1185,7 @@
     (uuid 631167f5-11a2-46cd-80e9-ce323cd1eec7)
     (property "Reference" "U2" (id 0) (at 115.5042 50.5165 0))
     (property "Value" "MCP6001x-LT" (id 1) (at 115.5042 53.2916 0))
-    (property "Footprint" "Package_TO_SOT_SMD:SOT-353_SC-70-5" (id 2) (at 100.33 59.69 0)
+    (property "Footprint" "Package_TO_SOT_SMD:SOT-23-5" (id 2) (at 100.33 59.69 0)
       (effects (font (size 1.27 1.27)) (justify left) hide)
     )
     (property "Datasheet" "http://ww1.microchip.com/downloads/en/DeviceDoc/21733j.pdf" (id 3) (at 102.87 54.61 0)
